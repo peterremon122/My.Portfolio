@@ -524,18 +524,75 @@
 
     /* Responsive */
     @media (max-width: 900px) {
-      nav { padding: 16px 24px; }
-      .nav-status { display: none; }
-      section { padding: 80px 24px; }
-      .hero { padding: 100px 24px 80px; }
-      .hero-stats { display: none; }
-      .project-card, .project-card:nth-child(even) {
-        grid-template-columns: 1fr;
-        direction: ltr;
-      }
-      .project-visual { min-height: 200px; }
-      footer { flex-direction: column; gap: 8px; text-align: center; }
-    }
+  nav {
+    padding: 14px 16px;
+  }
+  
+  .nav-links {
+    gap: 16px;
+  }
+
+  .nav-links a {
+    font-size: 0.6rem;
+  }
+
+  .nav-status {
+    display: none;
+  }
+
+  section {
+    padding: 70px 16px;
+  }
+
+  .hero {
+    padding: 90px 16px 60px;
+  }
+
+  .hero-name {
+    font-size: clamp(2.5rem, 10vw, 4rem);
+  }
+
+  .hero-bio {
+    font-size: 0.8rem;
+  }
+
+  .hero-stats {
+    display: none;
+  }
+
+  .project-card,
+  .project-card:nth-child(even) {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+
+  .project-info {
+    padding: 24px 16px;
+  }
+
+  .project-visual {
+    min-height: 180px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  body {
+    cursor: auto; /* مهم علشان الكيرسر المخصص بيبوظ الموبايل */
+  }
+
+  .cursor,
+  .cursor-ring {
+    display: none; /* اقفل الكيرسر على الموبايل */
+  }
+}
   </style>
 </head>
 <body>
@@ -566,11 +623,15 @@
         PETER<br>
         <span class="line2">REMON.</span>
       </h1>
-      <p class="hero-role">// Building interfaces that <em>perform</em></p>
+      <p class="hero-role">// Frontend Developer — Conversion Focused UI</p>
       <p class="hero-bio">
         I craft <em>fast, precise, and purposeful</em> web experiences using HTML, CSS, and JavaScript.
         From pixel-perfect UIs to interactive web apps — I turn ideas into code that clients love.
       </p>
+      <p class="hero-bio">
+        landing pages and websites that are not just beautiful — but designed to convert visitors into paying customers.
+        Fast delivery. Clean code. Real results.
+</p>
       <div class="hero-cta">
         <a href="#projects" class="btn-primary">View Projects →</a>
         <a href="#contact" class="btn-secondary">Hire Me</a>
@@ -772,7 +833,7 @@
       <p style="font-size:0.82rem; color:var(--text-dim); margin-bottom:32px; letter-spacing:0.08em;">
         or call <a href="tel:0181283181" style="color:var(--accent); text-decoration:none;">0181283181</a>
       </p>
-      <a href="https://wa.me/2001281283181" target="_blank" style="
+      <a href="https://wa.me/201281283181?text=Hello%20Peter%2C%20I%20saw%20your%20portfolio%20and%20I%20want%20a%20landing%20page%20for%20my%20business" target="_blank" style="
         display:inline-flex; align-items:center; gap:10px;
         background:rgba(37,211,102,0.08);
         border:1px solid rgba(37,211,102,0.35);
